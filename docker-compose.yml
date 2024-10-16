@@ -1,0 +1,10 @@
+version: '3'
+services:
+  task_manager:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - task_data:/app/task_data
+volumes:
+  task_data:
